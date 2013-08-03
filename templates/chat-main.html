@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Realtime Chat with Tornado</title>
+    <style type="text/css">
+        .chat-content { max-height: 200px; overflow: auto; }
+    </style>
+</head>
+<body class="yui-skin-sam">
+    <div id="container">
+        
+        <!-- a super basic login window -->
+        <div id="login">
+            <div class="hd">Enter a username</div><!-- login window titlebar -->
+            <div class="bd"><!-- login window content -->
+                <input type="text" name="username" id="username" />
+                <input type="button" id="login-button" value="Log In" />
+            </div>
+            <div class="ft"></div><!-- login window footer -->
+        </div>
+        
+    </div>
+    
+    <!-- include a javascript file from yahoo! -->
+    <script src="http://yui.yahooapis.com/2.8.0r4/build/yuiloader/yuiloader-min.js" type="text/javascript"></script>
+    <script src="{{ static_url('chat.js') }}" type="text/javascript"></script>
+</body>
+</html>
